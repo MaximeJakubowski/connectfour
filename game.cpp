@@ -234,9 +234,6 @@ int select_random_move(Board &board)
 
 int main(int argc, char** argv)
 {
-  // report version
-  std::cout << argv[0] << " Version " << Four_VERSION_MAJOR << "." \
-	    << Four_VERSION_MINOR << std::endl;
   std::srand(std::time(nullptr));
   cmd_args in = parse_cmd_args(argc, argv);
   if (in.success) {
